@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.bg-background-custom {
+  background-image: url('../public/assets/bg.jpg');
+  background-size: 100% 40%;
+}
+
+.womanpicture {
+  background-image: url('/home/mate/Projects/Cylex-Projects/Week 2/WeekEndProject/all-editors/public/assets/woman1.jpg');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
