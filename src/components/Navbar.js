@@ -16,77 +16,75 @@ export default function Nav() {
     <div> 
         <nav className="p-16 flex flex-col items-center justify-between text-center ">
         <div className="text-sm font-bold flex items-center gap-6">
-        <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70} 
-            duration={500}
-            className={`cursor-pointer ${
-              activeItem === 'home' ? 'text-pink-700' : ''
-            }`}
-            onClick={() => handleItemClick('home')}
-          >
-            Home
-          </Link>
-
           <Link
-            to="abou us"
+            to="aboutUs"
             spy={true}
             smooth={true}
             offset={-70} 
             duration={500}
             className={`cursor-pointer ${
-              activeItem === 'about us' ? 'text-pink-700' : ''
+              activeItem === 'about us' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('about us')}
           >
             About Us
           </Link>
           <Link
-            to="about us"
+            to="whatWeOffer"
             spy={true}
             smooth={true}
             offset={-70} 
             duration={500}
             className={`cursor-pointer ${
-              activeItem === 'what we offer' ? 'text-pink-700' : ''
+              activeItem === 'what we offer' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('what we offer')}
           >
             What we offer
           </Link>
 
-          <a
-            href="#"
+          <Link
+             to="fileUpload"
+             spy={true}
+             smooth={true}
+             offset={-70} 
+             duration={500}
             className={`cursor-pointer ${
-              activeItem === 'file uploded' ? 'text-pink-700' : ''
+              activeItem === 'file uploded' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('file uploded')}
           >
             File Uploded
-          </a>
+          </Link>
            
           
             
-          <a
-            href="#"
+          <Link
+             to="rateUs"
+             spy={true}
+             smooth={true}
+             offset={-70} 
+             duration={500}
             className={`cursor-pointer ${
-              activeItem === 'rate us' ? 'text-pink-700' : ''
+              activeItem === 'rate us' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('rate us')}
           >
             Rate Us
-            </a>
-            <a
-            href="#"
+            </Link>
+            <Link
+             to="contact"
+             spy={true}
+             smooth={true}
+             offset={-70} 
+             duration={500}
             className={`cursor-pointer ${
-              activeItem === 'contact' ? 'text-pink-700' : ''
+              activeItem === 'contact' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('contact')}
           >
             Contact
-          </a>
+          </Link>
         </div>
         </nav>
     </div>
