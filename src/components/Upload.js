@@ -81,7 +81,7 @@ export default function Upload() {
         </p>
         <img className='w-32 h-32 rounded-full my-2' src='https://seekicon.com/free-icon-download/upload_2.svg' alt='upload' />
         <p className='my-4'> Drag Files to Upload</p>
-        <label htmlFor='fileInput' className='text-white bg-fuchsia-600 border-4 px-20 py-3 cursor-pointer' onClick={handleUploadButtonClick}>
+        <label htmlFor='fileInput' className='text-white bg-fuchsia-600 hover:bg-fuchsia-300 border-4 px-20 py-3 cursor-pointer' onClick={handleUploadButtonClick}>
           <span>BROWSE FILES</span>
         </label>
         <input id='fileInput' type='file' className='hidden' onChange={handleFileChange} />

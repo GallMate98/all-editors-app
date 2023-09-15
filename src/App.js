@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="relative bg-top bg-no-repeat bg-background-custom bg-opacity-10 ">
      <div className=" py-20 justify-center static mb-40">
-      <Title size='text-base'/>
+      <Title/>
       <Navbar/>
      </div>
      <section>

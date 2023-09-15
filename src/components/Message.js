@@ -79,7 +79,7 @@ const handleSubmit = (event) => {
             <input className='border-b-2 mb-4 bg-gray-500 placeholder-white' type='text' placeholder='Name' name='name' onChange={handleChange()} value={query.name}/>
             <input className='border-b-2 mb-4 bg-gray-500 placeholder-white' type='email' placeholder='Email' name='email'onChange={handleChange()} value={query.email}/>
             <textarea className="bg-gray-100 mb-4 text-black h-24" row="12" cols="25" placeholder='Message' name='message' value={query.message} onChange={handleChange()}/>
-            <input className=' bg-emerald-800  text-white px-20 py-3 cursor-pointer' type='submit' value='Send Message' />
+            <input className=' bg-emerald-800  text-white px-20 py-3 cursor-pointer hover:bg-emerald-300' type='submit' value='Send Message' />
             {formStatus && alert("Message sent")}
         </form>
     </div>

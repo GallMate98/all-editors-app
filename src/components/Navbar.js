@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 
 
@@ -14,7 +14,7 @@ export default function Nav() {
 
   return(
     <div> 
-        <nav className="p-16 flex flex-col items-center justify-between text-center ">
+        <nav className="p-16 flex flex-col  items-center justify-between text-center text-5xl">
         <div className="text-sm font-bold flex items-center gap-6">
           <Link
             to="aboutUs"
@@ -22,7 +22,7 @@ export default function Nav() {
             smooth={true}
             offset={-70} 
             duration={500}
-            className={`cursor-pointer ${
+            className={` hover:text-fuchsia-600 cursor-pointer ${
               activeItem === 'about us' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('about us')}
@@ -35,7 +35,7 @@ export default function Nav() {
             smooth={true}
             offset={-70} 
             duration={500}
-            className={`cursor-pointer ${
+            className={`hover:text-fuchsia-600 cursor-pointer ${
               activeItem === 'what we offer' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('what we offer')}
@@ -49,7 +49,7 @@ export default function Nav() {
              smooth={true}
              offset={-70} 
              duration={500}
-            className={`cursor-pointer ${
+            className={`hover:text-fuchsia-600 cursor-pointer ${
               activeItem === 'file uploded' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('file uploded')}
@@ -65,7 +65,7 @@ export default function Nav() {
              smooth={true}
              offset={-70} 
              duration={500}
-            className={`cursor-pointer ${
+            className={`hover:text-fuchsia-600 cursor-pointer ${
               activeItem === 'rate us' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('rate us')}
@@ -78,7 +78,7 @@ export default function Nav() {
              smooth={true}
              offset={-70} 
              duration={500}
-            className={`cursor-pointer ${
+            className={`hover:text-fuchsia-600 cursor-pointer ${
               activeItem === 'contact' ? 'text-fuchsia-600' : ''
             }`}
             onClick={() => handleItemClick('contact')}

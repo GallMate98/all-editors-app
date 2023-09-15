@@ -75,7 +75,7 @@ const handleSubmit = (event) => {
             <input className='border-b-4 mb-4 ' type='email' placeholder='Email' name='email'onChange={handlEmailChange} value={email}/>
             <input className='border-b-4 mb-4' type='tel' placeholder='Phone' name='phoneNumber' onChange={handleTelChange} value={tel}/>
             <textarea className="bg-gray-200 mb-4 text-black h-24" row="12" cols="25" placeholder='Description' value={description} onChange={handleDescriptionChange}/>
-            <input className='border-fuchsia-800 border-4 text-black px-20 py-3 cursor-pointer' type='submit' value='Send Details' onClick={handleSubmit}/>
+            <input className='border-fuchsia-800 hover:bg-fuchsia-600 border-4 text-black px-20 py-3 cursor-pointer' type='submit' value='Send Details' onClick={handleSubmit}/>
         </form>
     </div>
   )
